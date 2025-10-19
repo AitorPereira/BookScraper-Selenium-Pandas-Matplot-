@@ -118,10 +118,10 @@ driver.quit()
 
 ### 💡 Why this project?
 
-✔️ Clean separation of concerns using Page Object Model.
-✔️ Easy to extend and maintain scraping logic.
-✔️ Combines automation with data analysis and visualization.
-✔️ Great practice for beginner-to-intermediate Python developers.
+✔️ Clean separation of concerns using Page Object Model.  
+✔️ Easy to extend and maintain scraping logic.  
+✔️ Combines automation with data analysis and visualization.  
+✔️ Great practice for beginner-to-intermediate Python developers.  
 
 ### 📜 License
 
