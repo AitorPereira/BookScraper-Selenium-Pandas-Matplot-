@@ -1,7 +1,7 @@
 # 📚 Book Scraper (Selenium+Pandas+Matplot)
 
 This repository contains a Selenium-based bot built in Python to scrape book data from [Books to Scrape](https://books.toscrape.com).  
-It follows the **Page Object Model (POM)** design pattern and integrates with **Pandas** for data processing and **Matplotlib** for visualization.
+It follows the **Page Object Model (POM)** design pattern and integrates with Pandas for data processing, Matplotlib for visualization, and Pytest for automated testing.
 
 ---
 
