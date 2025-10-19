@@ -74,23 +74,23 @@ data/                               # Folder to store CSV output
 ```bash
 git clone https://github.com/YourUsername/Selenium_Books_Scraper.git
 cd Selenium_Books_Scraper
-
+```
 2. Create Virtual Environment (Recommended)
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
-
+```
 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
-
-(Make sure to include selenium, pandas, matplotlib in requirements.txt.)
+```
+_(Make sure to include selenium, pandas, matplotlib in requirements.txt.)_
 
 4.	Run the Scraper
 ```bash
 python3 main.py
-
+```
 5.	Explore Data
 - The scraped CSV will be saved in /data/books.csv.
 - Use Pandas and Matplotlib to analyze and visualize.
