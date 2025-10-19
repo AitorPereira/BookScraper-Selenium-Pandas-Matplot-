@@ -36,11 +36,12 @@ src/
 │   └── WebDriver.py               # WebDriver initialization
 ├── DataProcessing/
 │   └── CsvHandler.py              # CSV reading and writing helpers
-└── tests/
-└── test.py                    # Test scripts for scraping
-main.py                            # Entry point for running the scraper
-data/                               # Folder to store CSV output
-````
+├── tests/
+│   ├── test_csv_handler.py        # Pytest tests for CSV handling
+│   └── test_scraper.py            # Pytest tests for scraping pages
+main.py                             # Entry point for running the scraper
+data/                                # Folder to store CSV output
+```
 
 ### 🔑 Key Features
 
@@ -91,9 +92,17 @@ _(Make sure to include selenium, pandas, matplotlib in requirements.txt.)_
 ```bash
 python3 main.py
 ```
-5.	Explore Data
+
+5. Run Pytest
+```
+pytest src/test/ -v
+```
+
+6.	Explore Data
 - The scraped CSV will be saved in /data/books.csv.
 - Use Pandas and Matplotlib to analyze and visualize.
+
+
 
 ### 🖥️ Example Usage
 ```
@@ -114,6 +123,26 @@ for book in book_cards:
     info = books_page.load_books(book)
     save_books_to_csv(info)
 driver.quit()
+```
+
+### 🧪 Example Pytest Test (tests/test_csv_handler.py)
+```
+import os
+import pytest
+from DataProcessing.CsvHandler import init_csv, save_books_to_csv, OUTPUT_FILE
+
+def test_csv_creation(tmp_path):
+    os.chdir(tmp_path)
+    init_csv()
+    assert os.path.exists(OUTPUT_FILE)
+
+def test_save_books():
+    book = {"title": "Test Book", "price": "£10.00", "stock": "In stock", "rating": "Five"}
+    init_csv()
+    save_books_to_csv(book)
+    with open(OUTPUT_FILE, "r") as f:
+        content = f.read()
+    assert "Test Book" in content
 ```
 
 ### 💡 Why this project?
