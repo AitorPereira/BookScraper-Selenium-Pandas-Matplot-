@@ -1,0 +1,74 @@
+# ================================================
+# Python general
+# ================================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+env/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# MacOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ================================================
+# Logs y cachés
+# ================================================
+*.log
+*.tmp
+*.bak
+*.swp
+.cache/
+.pytest_cache/
+coverage/
+htmlcov/
+
+# ================================================
+# Selenium / WebDriver
+# ================================================
+# Chromedriver ejecutable (si lo guardas localmente)
+chromedriver
+chromedriver.exe
+geckodriver
+msedgedriver
+webdriver.log
+
+# ================================================
+# CSV / Datos / Outputs
+# ================================================
+*.csv
+*.xlsx
+*.json
+*.xml
+*.db
+*.sqlite3
+/data/
+outputs/
+results/
+
+# ================================================
+# IDE / Editor configs
+# ================================================
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# ================================================
+# Reports / Screenshots
+# ================================================
+reports/
+screenshots/
+images/

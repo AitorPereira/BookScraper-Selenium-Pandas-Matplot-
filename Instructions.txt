@@ -1,0 +1,25 @@
+0. Set URL of the page: https://books.toscrape.com/
+2. Search box: id = search
+3. Send keys to the Search box (Ex: Headphones)
+4. Wait for the first image to load before starting to collect information
+5. Collect Name, Price, Rating, Number of reviews, Available Colors (If not exist, default=default), link (class="sc-jsMahE href) of maximum 40 Items.
+6. Save collected information in CSV
+
+7. Load CSV with Pandas
+8. Calculate average price, minimum and maximum price
+9. Show the 5 cheapest and the 5 most expensive
+10. Show the top 3 best rated
+11. Generate chart with Matplotlib taking into account the price of each product with their ratings
+
+
+
+Improvements
+1. Expand it to more items by clicking next page taking into account that each page has 40 items.
+2. Make the user able to write through input the product to search
+3. Make automatic daily updates and update the CSV with new data
+4. Compare prices between executions to see if they went up or down
+
+Expansions
+1. Add an email or telegram notification service to inform if the price drops below a certain value
+2. Analyze price trends in the long term
+3. Connect it to a SQLite or MYSQL database
