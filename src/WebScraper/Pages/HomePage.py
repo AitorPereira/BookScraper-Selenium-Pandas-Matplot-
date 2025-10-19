@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from src.WebScraper.BasePage import BasePage
+from WebScraper.BasePage import BasePage
 
 class HomePage(BasePage):
     URL = "https://books.toscrape.com/"

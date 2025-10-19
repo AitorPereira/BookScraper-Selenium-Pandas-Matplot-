@@ -1,4 +1,4 @@
-from src.WebScraper.BasePage import BasePage
+from WebScraper.BasePage import BasePage
 from selenium.webdriver.common.by import By
 
 class BooksPage(BasePage):
